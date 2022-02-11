@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
 
     var city = req.body.city;   
-    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=ce15f8033042ba189a861fa71eeffce6`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=*************`;
 
     request(url, function (err, response, body) {
         if (err) {
